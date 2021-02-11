@@ -40,7 +40,7 @@ install: |
 before_script:
   - java -version
   - mvn -version
-  - ulimit -c unlimited
+  #- ulimit -c unlimited
 
 script:
   - travis_retry mvn -B clean apache-rat:check
